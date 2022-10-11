@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+}
+
+.body-bg-bottom {
+  width: 65rem;
+  max-width: 65rem;
+  position: absolute;
+  right: -13.75rem;
+  bottom: -43.125rem;
+  z-index: -1;
+}
+.body-bg-top {
+  width: 65rem;
+  max-width: 65rem;
+  position: absolute;
+  left: -12.5rem;
+  top: -41.25rem;
+  z-index: -1;
+}
+
+.cardContainer {
+  position: relative;
+  width: 22.188rem;
+  height: 25rem;
+  border-radius: 15px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bg-card {
+  width: 100%;
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile-pic {
+  width: 6rem;
+  max-width: 6rem;
+  position: absolute;
+  top: 35%;
+  margin-top: -48px;
+  left: 50%;
+  margin-left: -48px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.user {
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#age {
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+#city {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+.data {
+  font-size: 0.813rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.data h2 {
+  opacity: 0.8;
+}
+
+.data p {
+  padding-top: 0.3rem;
+}
+
+@media screen and (max-width: 375px) {
+  .cardContainer {
+    width: 90%;
+  }
+
+  .body-bg-bottom {
+    top: 18.75rem;
+    left: 7.5rem;
+  }
+
+  .body-bg-top {
+    top: -34.375rem;
+    left: -54.375rem;
+  }
+}
